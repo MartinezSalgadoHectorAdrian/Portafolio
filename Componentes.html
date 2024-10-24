@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ejemplo</title>
+</head>
+<body>
+    <h2>Formulario de Práctica</h2>
+
+    <form action="#" method="post">
+        <!-- Campo de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" /><br><br>
+
+        <!-- Campo de contraseña -->
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" placeholder="Escribe tu contraseña" /><br><br>
+
+        <!-- Campo de archivo -->
+        <label for="archivo">Subir archivo:</label>
+        <input type="file" id="archivo" name="archivo" /><br><br>
+
+        <!-- Checkbox -->
+        <label for="acepto">Acepto los términos:</label>
+        <input type="checkbox" id="acepto" name="acepto" /><br><br>
+
+        <!-- Radio button -->
+        <p>Sexo:</p>
+        <label for="ho
+        mbre">Hombre</label>
+        <input type="radio" id="hombre" name="sexo" value="H" />
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="mujer" name="sexo" value="M" /><br><br>
+
+        <!-- Campo oculto -->
+        <input type="hidden" name="folio" value="12345" />
+
+        <!-- Textarea -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar" />
+
+<!-- Lista Desplegable -->
+
+        <select name="pais">
+            <option value="MX" selected>Mexico</option>
+            <option value="US">Estados Unidos</option>
+            <option value="CA">Canada</option>
+        </select>
+
+
+<!-- Lista Desplegable agrupada-->
+
+<select name="Paises y colores">
+
+    <optgroup label="Paises"></optgroup>
+    
+        <option value="MX" selected>Mexico</option>
+        <option value="US">Estados Unidos</option>
+        <option value="CA">Canada</option>
+   
+</optgroup>
+
+<optgroup label="Colores">
+    
+    <option value="amarillo" selected>Amarillo</option>
+    <option value="azul">Azul</option>
+    <option value="blanco">Blanco</option>
+
+</optgroup>
+</select>
+
+<!-- Boton-->
+
+<button type="submit">Enviar </button>
+<img style="
+right: 20px" width="20px" src="C:\Users\hecto\Downloads\arrow-fat-line-right (1).svg" alt="m">
+<button type="reset">Limpiar</button>
+<button type="button">Cancelar </button>
+
+<!-- Agrupar Componentes-->
+
+<fieldset>
+    <legend>Datos Personales</legend>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido">
+
+</fieldset>
+
+<!-- Agrupar Componentes (desabilitar)-->
+
+<fieldset disabled>
+    <legend>Datos Personales</legend>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido">
+
+</fieldset>
+
+<!-- Componentes Adicionales-->
+
+<input list="colores" name="color" />
+<datalist id="colores">
+    <option value="Rojo" />
+    <option value="Verde" />
+    <option value="Azul" />
+</datalist>
+
+<output name="resultado" for="numero">0</output>
+
+<progress value="75" max="100">75%</progress>
+
+<meter value="0.5" min="0" max="1">50%</meter>
+
+<details>
+    <summary>Detalles</summary>
+    <p>Contenido de los detalles...</p>
+</details>
+
+
+    </form>
+</body>
+</html>
